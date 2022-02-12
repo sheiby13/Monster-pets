@@ -1,0 +1,149 @@
+/* Обнуление */
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+ul,
+ol,
+li{
+	list-style: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6{
+	font-weight: inherit;
+	font-size: inherit;
+}
+body{
+	height: 100%;
+	line-height: 1;
+}
+body{
+	font-family: CircularStd,sans-serif;
+	min-height: 100%;
+    background-color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	color: #1d3a2a;
+}
+/*-------------------------------------------------------------------*/
+.wrapper{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+[class*="__container"]{
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+/*TABLET*/
+@media(max-width: 991px){
+    [class*="__container"]{
+    	max-width: 800px;
+    }
+}
+/*MOBILE*/
+@media(max-width: 767px){
+	[class*="__container"]{
+    	max-width:none;
+    }
+}
+/*-------------------------------------------------------------------*/
+.header__container{
+	display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+}
+.navigation-left{
+	display: flex;
+	width: 20%;
+	align-items: center;
+	margin-top: 15px;
+}
+.navigation-logo{
+	width: 150px;
+}
+.navigation-right{
+	display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+.collection-list-nav{
+	float:right;
+}
+.navigation{
+	position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 9999;
+    display: flex;
+    padding-left: 3%;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(29,58,42,.15);
+    object-fit: fill;
+}
+.nav-menu{
+	position: static;
+    display: flex;
+    
+    float: right;
+}
+.list-item{
+	display: inline-block;
+}
+.navigation-link{
+	display: inline-block;
+	margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px 12px;
+}
+/*.navigation-link:nth-last-child(-n+3){
+	margin-top: 0px;
+}*/
+a{
+	background-color: transparent;
+    color: #1d3a2a;
+}
+a:hover{
+	cursor: pointer;
+    text-decoration: none;
+    color: #226634;
+    opacity:0.8 ;
+}
+.header-icons{
+	padding-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 0px;
+	height: 35px;
+}
+/*ADAPTIVE-NAV----------------------------------------------------*/
+@media(max-width: 991px){
+    [class*="__container"]{
+    }
+}
+/*-----------------------------------------------------------------*/
