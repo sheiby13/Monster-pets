@@ -35,7 +35,7 @@ body{
 body{
 	font-family: CircularStd,sans-serif;
 	min-height: 100%;
-    background-color: #fff;
+     background-color: #fff;
 	font-size: 16px;
 	font-weight: 700;
 	color: #1d3a2a;
@@ -174,6 +174,7 @@ a:hover{
 }
 /*-----------------------------------------------------------------*/
 .health-pets__container{
+	margin-top: 100px;
 }
 .health-pets_content{
 	display: flex;
@@ -181,18 +182,18 @@ a:hover{
 }
 .health-pets-decor{
 	position: absolute;
-    z-index: 0;
-    margin-top: 24px;
-    margin-left: 22px;
+     z-index: 0;
+     margin-top: 24px;
+     margin-left: 22px;
 }
 .health-pets_img{
 	width: 50%;
 }
 .health-pets_img img{
-    vertical-align: middle;
-    display: inline-block;
-    max-width: 100%;
-    vertical-align: middle;
+     vertical-align: middle;
+     display: inline-block;
+     max-width: 100%;
+     vertical-align: middle;
 }
 .health-pets_block-text{
 	width: 50%;
@@ -200,43 +201,92 @@ a:hover{
 }
 h1 {
 	margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 3rem;
-    line-height: 4rem;
-    font-weight: 700;
+	margin-bottom: 10px;
+     font-size: 3rem;
+     line-height: 4rem;
+     font-weight: 700;
 }
 p{
-	margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 30px;
     color: #575757;
     font-size: 18px;
     line-height: 1.8rem;
-    font-weight: 400;
+    font-weight:540;
 }
 .block-text{
-	padding: 10px;
+
 }
 .health-pets_buttons-items{
 	display: flex;
 }
 .button-item{
 	display: flex;
-    min-height: 62px;
-    width: 100%;
-    margin: 10px;
-    padding-right: 39px;
-    padding-left: 39px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 60px;
-    background-color: #1d3a2a;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: none
+     min-height: 62px;
+     width: 100%;
+     margin: 10px;
+     padding-right: 39px;
+     padding-left: 39px;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 60px;
+     background-color: #1d3a2a;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 700;
+     text-align: center;
+     text-decoration: none;
+
 }
 .button-item:hover{
 	opacity: 0.8;
+	transform: scale(1.1);
+}
+/*-----------------------------------------------------------------*/
+.ingredients_block{
+	display: flex;
+     height: 380px;
+     margin: 100px 120px;
+     align-items: center;
+     background-color: rgba(29,58,42,.1);
+}
+.ingredients_block-1{
+	margin-left:30px;
+	margin-right: 80px;
+	height: auto;
+	width: 300px;
+	text-align: left;
+}
+.title-pade{
+
+}
+.title-chicken{
+	display: flex;
+	font-size: 32px;
+	margin: 10px;
+	height: 50px;
+}
+.ingredients_block-2{
+	padding: 20px 30px;
+	padding-bottom: 0;
+	background-color: #fff;
+	height: auto;
+	width: 330px;
+	text-align: left;
+	box-shadow: 0 1px 17px 6px rgb(29 58 42 / 8%);
+}
+.icon{
+	display: flex;
+	width: 100px;
+     height: 80px;
+     max-height: 100px;
+     max-width: 100px;
+     min-height: 100px;
+     min-width: 100px;
+     justify-content: center;
+     align-items: center;
+}
+.block-text-chicken{
+	padding-top: 20px;
 }
 /*-----------------------------------------------------------------*/
