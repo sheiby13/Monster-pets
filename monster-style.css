@@ -73,12 +73,13 @@ body{
     margin-right: auto;
     margin-left: auto;
     background-color: #fff;
+    position: relative;
 }
 .navigation-left{
 	display: flex;
 	width: 20%;
 	align-items: center;
-	margin-top: 15px;
+	margin-left: 20px;
 }
 .navigation-logo{
 	width: 150px;
@@ -92,7 +93,7 @@ body{
 	float:right;
 }
 .navigation{
-	position: fixed;
+	position:relative;
     left: 0;
     top: 0;
     right: 0;
@@ -110,7 +111,6 @@ body{
 .nav-menu{
 	position: static;
     display: flex;
-    
     float: right;
 }
 .list-item{
@@ -145,5 +145,98 @@ a:hover{
 @media(max-width: 991px){
     [class*="__container"]{
     }
+}
+/*-----------------------------------------------------------------*/
+.background-video{
+	width: 100%;
+	height: 900px;
+	border-left: none;
+	border-right: none;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+    
+}
+.background-video__container{
+	position: absolute;
+	max-width: none;
+    top: 0;
+    left:0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+/*-----------------------------------------------------------------*/
+.health-pets__container{
+}
+.health-pets_content{
+	display: flex;
+	margin: 30px 30px;
+}
+.health-pets-decor{
+	position: absolute;
+    z-index: 0;
+    margin-top: 24px;
+    margin-left: 22px;
+}
+.health-pets_img{
+	width: 50%;
+}
+.health-pets_img img{
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.health-pets_block-text{
+	width: 50%;
+	padding: 0px 30px;
+}
+h1 {
+	margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+p{
+	margin-top: 20px;
+    margin-bottom: 30px;
+    color: #575757;
+    font-size: 18px;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+.block-text{
+	padding: 10px;
+}
+.health-pets_buttons-items{
+	display: flex;
+}
+.button-item{
+	display: flex;
+    min-height: 62px;
+    width: 100%;
+    margin: 10px;
+    padding-right: 39px;
+    padding-left: 39px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #1d3a2a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none
+}
+.button-item:hover{
+	opacity: 0.8;
 }
 /*-----------------------------------------------------------------*/
