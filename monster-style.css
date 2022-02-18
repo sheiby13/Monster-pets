@@ -215,10 +215,13 @@ p{
     font-weight:540;
 }
 .block-text{
-
 }
 .health-pets_buttons-items{
 	display: flex;
+}
+.arrow{
+	display: flex;
+	align-items: center;
 }
 .button-item{
 	display: flex;
@@ -239,7 +242,7 @@ p{
 
 }
 .button-item:hover{
-	opacity: 0.8;
+	opacity: 0.9;
 	transform: scale(1.1);
 }
 /*-----------------------------------------------------------------*/
@@ -250,7 +253,6 @@ p{
 .ingredients__container{
 	max-width: none;
 	padding: 0px;
-	
 }
 .ingredients_block{
 	display: flex;
@@ -329,8 +331,7 @@ p{
 	background-position: 50% 50%;
      background-size: cover;
      background-attachment: scroll;
-     margin-top: 5vw;
-     margin-bottom: 10vw;
+     margin-top: 150px;
      height: 520px;
 }
 .heading_our-ingredients{
@@ -347,7 +348,6 @@ p{
 	position: relative;
 	top: 150px;
 	left: 450px;
-
 }
 .our-ingredients_button{
 	display: flex;
@@ -359,5 +359,75 @@ p{
      padding-right: 39px;
      padding-left: 39px;
      font-size: 18px;
+}
+/*-----------------------------------------------------------------*/
+.dog-products{
+	margin:150px 0;
+}
+.dog-products_block{
+	padding: 0 22px;
+	margin: 0 152px;
+}
+.heading_dog-products{
+	color: #1d3a2a;
+     font-size: 2rem;
+     line-height: 1.9rem;
+     font-weight: 700;
+     margin-top: 0;
+     margin-bottom: 35px;
+}
+.dog-products_collection{
+	width: 100%;
+	display:inline-block;
+}
+.collection-items{
+	display: flex;
+	
+	flex-wrap: wrap;
+	column-gap: 30px;
+}
+.collection-item{
+	box-shadow: 0 1px 3px 0 rgb(29 58 42 / 24%);
+	overflow: hidden;
+     border-radius: 4px;
+     color: #1d3a2a;
+
 
 }
+.collection-item:hover{
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+
+}
+.product-image{
+	width: 365.33px;
+	height: 365.33px;
+}
+.product-card-image{
+	overflow: hidden;
+     max-height: 360px;
+     background-color: #f6f5f2;
+     object-fit: fill
+}
+.product-card-text{
+	position: relative;
+     min-height: 150px;
+     padding: 20px;
+}
+.product-card-name{
+	font-size: 18px;
+     font-weight: 700;
+     text-decoration: none;
+}
+.product-card-cta{
+	display: flex;
+	position: absolute;
+     bottom: 1rem;
+     align-items: center;
+     color: #1d3a2a;
+}
+.text-block{
+	margin-right: 10px;
+     font-weight: 700;
+}
+/*-----------------------------------------------------------------*/
