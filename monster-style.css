@@ -67,14 +67,14 @@ body{
 /*-------------------------------------------------------------------*/
 .header__container{
 	display: flex;
-    width: 100%;
-    height: 100%;
-    min-height: 80px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #fff;
-    position: relative;
-}
+     width: 100%;
+     height: 100%;
+     min-height: 80px;
+     margin-right: auto;
+     margin-left: auto;
+     background-color: #fff;
+     position: relative;
+} 
 .navigation-left{
 	display: flex;
 	width: 20%;
@@ -86,32 +86,32 @@ body{
 }
 .navigation-right{
 	display: flex;
-    width: 80%;
-    justify-content: flex-end;
+     width: 80%;
+     justify-content: flex-end;
 }
 .collection-list-nav{
 	float:right;
 }
 .navigation{
 	position:relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    z-index: 9999;
-    display: flex;
-    padding-left: 3%;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid rgba(29,58,42,.15);
-    object-fit: fill;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: auto;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     z-index: 9999;
+     display: flex;
+     padding-left: 3%;
+     flex-direction: column;
+     align-items: center;
+     border-bottom: 1px solid rgba(29,58,42,.15);
+     object-fit: fill;
 }
 .nav-menu{
 	position: static;
-    display: flex;
-    float: right;
+   	display: flex;
+    	float: right;
 }
 .list-item{
 	display: inline-block;
@@ -119,21 +119,21 @@ body{
 .navigation-link{
 	display: inline-block;
 	margin-top: 10px;
-    margin-left: 10px;
-    padding: 20px 12px;
+    	margin-left: 10px;
+    	padding: 20px 12px;
 }
 /*.navigation-link:nth-last-child(-n+3){
 	margin-top: 0px;
 }*/
 a{
 	background-color: transparent;
-    color: #1d3a2a;
+	color: #1d3a2a;
 }
 a:hover{
 	cursor: pointer;
-    text-decoration: none;
-    color: #226634;
-    opacity:0.8 ;
+	text-decoration: none;
+    	color: #226634;
+    	opacity:0.8 ;
 }
 .header-icons{
 	padding-bottom: 10px;
@@ -160,12 +160,12 @@ a:hover{
 .background-video__container{
 	position: absolute;
 	max-width: none;
-    top: 0;
-    left:0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+	top: 0;
+	left:0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 .video{
     position: absolute;
@@ -243,50 +243,84 @@ p{
 	transform: scale(1.1);
 }
 /*-----------------------------------------------------------------*/
+.ingredients{
+	height:600px ;
+	margin: 100px 0 50px 0;	
+}
+.ingredients__container{
+	max-width: none;
+	padding: 0px;
+	
+}
 .ingredients_block{
 	display: flex;
+	position: relative;
      height: 380px;
      margin: 100px 120px;
      align-items: center;
      background-color: rgba(29,58,42,.1);
 }
 .ingredients_block-1{
-	margin-left:30px;
-	margin-right: 80px;
+	margin-left:70px;
+	margin-right: 90px;
 	height: auto;
 	width: 300px;
 	text-align: left;
 }
 .title-pade{
-
 }
-.title-chicken{
-	display: flex;
+.title-ingredients{
+	display: inline-block;
 	font-size: 32px;
 	margin: 10px;
 	height: 50px;
 }
 .ingredients_block-2{
 	padding: 20px 30px;
-	padding-bottom: 0;
+	padding-bottom: 15px;
 	background-color: #fff;
 	height: auto;
-	width: 330px;
+	width: 450px;
 	text-align: left;
 	box-shadow: 0 1px 17px 6px rgb(29 58 42 / 8%);
 }
 .icon{
-	display: flex;
+	display: inline-block;
 	width: 100px;
-     height: 80px;
+     height: 65px;
      max-height: 100px;
      max-width: 100px;
-     min-height: 100px;
      min-width: 100px;
      justify-content: center;
      align-items: center;
 }
-.block-text-chicken{
-	padding-top: 20px;
+.item-ingredients{
+	margin: 0;
+}
+.block-text-ingredients{
+}
+.ingredients_block-3{
+	position: relative;
+	left: 200px;
+	bottom: 180px;
+	padding: 20px 30px;
+	padding-bottom: 0;
+	background-color: #fff;
+	height: auto;
+	width: 400px;
+	text-align: left;
+	box-shadow: 0 1px 17px 6px rgb(29 58 42 / 8%);
+}
+.ingredients_block-4{
+	position: relative;
+	right: 180px;
+	top: 150px;
+	padding: 20px 30px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	height: auto;
+	width: 450px;
+	text-align: left;
+	box-shadow: 0 1px 17px 6px rgb(29, 58, 42, 8%);
 }
 /*-----------------------------------------------------------------*/
