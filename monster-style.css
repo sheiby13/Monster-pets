@@ -364,11 +364,11 @@ p{
 .dog-products{
 	margin:150px 0;
 }
-.dog-products_block{
+.products_block{
 	padding: 0 22px;
 	margin: 0 152px;
 }
-.heading_dog-products{
+.heading{
 	color: #1d3a2a;
      font-size: 2rem;
      line-height: 1.9rem;
@@ -391,13 +391,10 @@ p{
 	overflow: hidden;
      border-radius: 4px;
      color: #1d3a2a;
-
-
 }
 .collection-item:hover{
 	transform: scale(1.1);
 	transition-duration: 0.5s;
-
 }
 .product-image{
 	width: 365.33px;
@@ -429,5 +426,9 @@ p{
 .text-block{
 	margin-right: 10px;
      font-weight: 700;
+}
+/*-----------------------------------------------------------------*/
+.cat-products{
+	margin-bottom: 100px;
 }
 /*-----------------------------------------------------------------*/
