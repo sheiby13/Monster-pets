@@ -50,16 +50,25 @@ body{
 [class*="__container"]{
 	max-width: 1440px;
 	margin: 0px auto;
-	padding: 0px 15px;
+	margin-bottom: 200px;
+    padding: 0px 15px;
 }
-/*TABLET*/
 @media(max-width: 991px){
     [class*="__container"]{
-    	max-width: 800px;
+    	max-width: 850px;
     }
 }
-/*MOBILE*/
 @media(max-width: 767px){
+	[class*="__container"]{
+    	max-width:none;
+    }
+}
+@media(max-width: 479px){
+	[class*="__container"]{
+    	max-width:none;
+    }
+}
+@media(max-width: 360px){
 	[class*="__container"]{
     	max-width:none;
     }
@@ -178,29 +187,31 @@ a{
 }
 .health-pets-decor{
 	position: absolute;
-     z-index: 0;
-     margin-top: 24px;
-     margin-left: 22px;
+    z-index: 0;
+    margin-top: 24px;
+    margin-left: 22px;
+    vertical-align: middle;
 }
 .health-pets_img{
-	width: 50%;
+	width: 50%
 }
 .health-pets_img img{
-     vertical-align: middle;
-     display: inline-block;
-     max-width: 100%;
-     vertical-align: middle;
+    display: inline-block;
+}
+.responsive{
+	width: 100%;
+    max-width: 100%;
 }
 .health-pets_block-text{
 	width: 50%;
-	padding: 0px 30px;
+    padding: 0px 30px;
 }
 h1 {
 	margin-top: 50px;
 	margin-bottom: 10px;
-     font-size: 3rem;
-     line-height: 4rem;
-     font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
 }
 p{
     margin-top: 20px;
@@ -214,32 +225,140 @@ p{
 }
 .health-pets_buttons-items{
 	display: flex;
+	width: 100%;
 }
 .arrow{
 	display: flex;
 	align-items: center;
+	padding-left: 50px;
 }
 .button-item{
 	display: flex;
-     min-height: 62px;
-     width: 100%;
-     margin: 10px;
-     padding-right: 39px;
-     padding-left: 39px;
-     justify-content: space-between;
-     align-items: center;
-     border-radius: 60px;
-     background-color: #1d3a2a;
-     color: #fff;
-     font-size: 18px;
-     font-weight: 700;
-     text-align: center;
-     text-decoration: none;
-
+    min-height: 62px;
+    margin: 10px;
+    padding:0 39px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #1d3a2a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
 }
 .button-item:hover{
 	opacity: 0.9;
 	transform: scale(1.1);
+}
+/*ADAPTIVE-HEALTH-PETS---------------------------------------------*/
+@media(max-width: 991px){
+	.header__container{
+		margin-top: 50px;
+	}
+	.health-pets-decor{
+		max-width: 10%;
+		left: 100px;
+	}
+	.button-item{
+		font-size: 16px;
+		font-weight: 600;	
+	}
+	.health-pets_block-text{
+		margin-left: 10px;
+		padding: 0;
+	}
+	.health-pets_img{
+		width: 50%
+	}
+}
+@media(max-width: 767px){
+	.header__container{
+		margin-top: 50px;
+	}
+	.health-pets_content{
+		display: inline-block;
+	}
+	.health-pets_block-text{
+		margin: 0 auto;
+		width: 80%;
+	}
+	.block-text{
+		padding-bottom: 30px;
+	}
+	.health-pets-decor{
+		max-width: 25%;
+		left: 30px;
+	}
+	.button-item{
+		font-size: 16px;
+		font-weight: 600;	
+		margin: 0 20px;
+		padding: 0 29px;
+	}
+	.health-pets_img{
+		width: 100%
+	}
+}	
+@media(max-width: 479px){
+	.health-pets_block-text{
+		margin: 0;
+		width: 100%;
+	}
+	h1{
+		margin-top: 50px;
+		margin-bottom: 10px;
+		font-size: 2rem;
+		line-height: 2rem;
+		font-weight: 600;
+	}
+	.block-text{
+		font-size: 14px;
+	}
+	.button-item{
+		font-size: 12px;
+		font-weight: 600;	
+		margin: 0 20px;
+		padding: 0 19px;
+		min-height: 52px;
+		border-radius: 30px;
+	}
+	.arrow{
+		width: 40%;
+		padding-left: 20px;	 
+	}
+}
+@media(max-width: 360px){
+	.health-pets_buttons-items {
+		display: block;
+	}
+	.health-pets_block-text{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	.block-text{
+		padding: 0 5px;
+		font-size: 1rem;
+	}
+	h1{
+		margin-top: 30px;
+		margin-bottom: 15px;
+		font-size: 2rem;
+		line-height: 2rem;
+		font-weight: 600;
+	}
+	.button-item{
+		margin: 15px 0;
+	}
+	.arrow{
+		width: 30%;
+		margin: 0 10px; 
+	}
+	.health-pets_buttons{
+		width: 70%;
+		margin: 0 auto;
+	}
 }
 /*-----------------------------------------------------------------*/
 .ingredients{
