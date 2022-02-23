@@ -35,7 +35,7 @@ body{
 body{
 	font-family: CircularStd,sans-serif;
 	min-height: 100%;
-     background-color: #fff;
+    background-color: #fff;
 	font-size: 16px;
 	font-weight: 700;
 	color: #1d3a2a;
@@ -219,7 +219,7 @@ p{
     color: #575757;
     font-size: 18px;
     line-height: 1.8rem;
-    font-weight:540;
+    /*font-weight:540;*/
 }
 .block-text{
 }
@@ -329,6 +329,9 @@ p{
 	}
 }
 @media(max-width: 360px){
+	.health-pets__container{
+		margin-bottom: 100px;
+	}
 	.health-pets_buttons-items {
 		display: block;
 	}
@@ -385,6 +388,7 @@ p{
 	text-align: left;
 }
 .title-pade{
+	font-size: 2rem;
 }
 .title-ingredients{
 	display: inline-block;
@@ -440,21 +444,130 @@ p{
 	text-align: left;
 	box-shadow: 0 1px 17px 6px rgb(29, 58, 42, 8%);
 }
+/*ADAPTIVE-INGREDIENTS--------------------------------------------*/
+@media(max-width: 991px){
+	.ingredients__container{
+		height: 100%;
+		padding-bottom: 20px;
+		margin-bottom: 50px;
+	}
+	.ingredients{
+		margin-top: 0px;
+	}
+	.ingredients_block{
+		height: auto;
+		display: block;
+		margin: 50px;
+		padding-bottom: 30px;
+	}
+	.ingredients_block-1{
+		width: 100%;
+		margin: 0;
+		padding: 30px;
+	}
+	.button-item_ingredients{
+		width: 35%;
+	}
+	.ingredients_block-2{
+		display: block;
+		width: 90%;
+		margin: 30px auto;
+		padding: 10px 20px;
+	}
+	.ingredients_block-3{
+		display: block;
+		position: static;
+		left: 0px;
+		width: 90%;
+		margin: 30px auto;
+		padding: 10px 20px;
+	}
+	.ingredients_block-4{
+		display: block;
+		position: static;
+		left: 0px;
+		width: 90%;
+		margin: 30px auto;
+		padding: 10px 20px;
+	}
+}
+@media(max-width: 767px){
+}	
+@media(max-width: 479px){
+	.block-text-ingredients{
+        line-height: 1.4rem;
+	}
+	.title-ingredients{
+		display: block; 
+	}
+	.title-page{
+		font-size: 64px;
+    	line-height: 1.9rem;
+    	font-weight: 700;
+	}
+	.ingredients_block-1{
+		width: 100%;
+		margin: 0;
+		padding: 30px;
+	}
+	.button-item_ingredients{
+		width: 35%;
+	}
+	.ingredients_block-2{
+		display: block;
+		width: 90%;
+		margin: 30px auto;
+		padding: 10px 20px;
+	}
+	.ingredients_block-3{
+		display: block;
+		position: static;
+		left: 0px;
+		width: 90%;
+		margin: 30px auto;
+		padding: 10px 20px;
+	}
+	.ingredients_block-4{
+		display: block;
+		position: static;
+		left: 0px;
+		width: 90%;
+		margin: 30px auto;
+		padding: 10px 20px;
+	}
+	.ingredients_block{
+		margin: 10px auto; 
+	}
+	.button-item_ingredients{
+		width: 50%;
+	}
+	.block-text{
+		padding-bottom: 0;
+	}
+}
+@media(max-width: 360px){
+	.button-item_ingredients{
+		width: 90%;
+	}
+}
 /*-----------------------------------------------------------------*/
+.our-ingredients__container{
+	position: static;
+}
 .our-ingredients{
+	background-position: bottom 50px right 100px;
 	background-image: url(https://uploads-ssl.webflow.com/617ad8e90ecd3d046a6603dd/618c00264f9e7ed13bfd5f8f_monster_pet_food_bg_1.jpg);
-	background-position: 50% 50%;
-     background-size: cover;
-     background-attachment: scroll;
-     margin-top: 150px;
-     height: 520px;
+    background-size: cover;
+    background-attachment: scroll;
+    margin-top: 300px;
+    height: 520px;
 }
 .heading_our-ingredients{
 	margin-top: 0;
-     margin-bottom: 32px;
-     color: #fff;
-     font-size: 4rem;
-     line-height: 4.4rem;
+    margin-bottom: 32px;
+    color: #fff;
+    font-size: 4rem;
+    line-height: 4.4rem;
 }
 .our-ingredients_block{
 	display: block;
@@ -475,6 +588,28 @@ p{
      padding-left: 39px;
      font-size: 18px;
 }
+@media(max-width: 991px){
+	.our-ingredients{
+		margin-top: 500px;
+	}
+}
+@media(max-width: 767px){
+	.our-ingredients{
+		margin-top: 600px;
+	}
+}	
+@media(max-width: 479px){
+	.our-ingredients{
+		margin-top: 730px;
+	}
+}
+@media(max-width: 360px){
+	.our-ingredients{
+		margin-top: 800px;
+	}
+	
+}
+
 /*-----------------------------------------------------------------*/
 .dog-products{
 	margin:150px 0;
@@ -602,27 +737,11 @@ p{
 	.product-card-name{
 		line-height: normal;
 	}
-	
 }
 /*-----------------------------------------------------------------*/
 .cat-products{
 	margin-bottom: 50px;
 }
-/*ADAPTIVE-CAT-PRODUCTS--------------------------------------------*/
-@media(max-width: 991px){
-	
-}
-@media(max-width: 767px){
-	
-}	
-@media(max-width: 479px){
-	
-}
-@media(max-width: 360px){
-	
-	
-}
-/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 .footer{
 	display: flex;
