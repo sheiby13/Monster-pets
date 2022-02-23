@@ -555,10 +555,9 @@ p{
 	position: static;
 }
 .our-ingredients{
-	background-position: bottom 50px right 100px;
+	background-position: bottom 0 right 0;
 	background-image: url(https://uploads-ssl.webflow.com/617ad8e90ecd3d046a6603dd/618c00264f9e7ed13bfd5f8f_monster_pet_food_bg_1.jpg);
     background-size: cover;
-    background-attachment: scroll;
     margin-top: 300px;
     height: 520px;
 }
@@ -581,35 +580,78 @@ p{
 	display: flex;
 	align-items: center;
 	min-height: 62px;
-     margin: 10px;
-     margin-left: 150px;
-     width: 250px;
-     padding-right: 39px;
-     padding-left: 39px;
-     font-size: 18px;
+    margin: 10px;
+    margin-left: 150px;
+    width: 250px;
+    padding-right: 39px;
+    padding-left: 39px;
+    font-size: 18px;
 }
+/*ADAPTIVE-OUR-INGREDIENTS-----------------------------------------*/
 @media(max-width: 991px){
+	.our-ingredients__container{
+		padding: 0;
+		margin: 0;
+	}
 	.our-ingredients{
 		margin-top: 500px;
+	}
+	.our-ingredients_block{
+	    display: block;
+		height: auto;
+		position: relative;
+		top: 150px;
+		left: 200px;
+	}
+	.heading_our-ingredients{
+		position: relative;
+		display: flex; 
+		margin: 0;
+	}
+	.heading_our-ingredients{
+		padding-bottom: 30px;
 	}
 }
 @media(max-width: 767px){
 	.our-ingredients{
 		margin-top: 600px;
 	}
+	.heading_our-ingredients{
+		font-size: 3rem;
+	}
+	.our-ingredients_block{
+		left: 140px;
+		position: relative;
+	}
+	.our-ingredients_button{
+		margin: 0;  
+		margin-left: 50px;
+	}
 }	
 @media(max-width: 479px){
 	.our-ingredients{
-		margin-top: 730px;
+		margin-top: 700px;
+	}
+	.our-ingredients_block{
+		left: 55px;
+		position: relative;
+	}
+	.heading_our-ingredients{
+		font-size: 40px;
 	}
 }
 @media(max-width: 360px){
 	.our-ingredients{
 		margin-top: 800px;
 	}
-	
+	.our-ingredients_button{
+		margin-left: 15px;
+	}
+	.heading_our-ingredients{
+		text-align: center;
+		right: 50px;
+	}
 }
-
 /*-----------------------------------------------------------------*/
 .dog-products{
 	margin:150px 0;
