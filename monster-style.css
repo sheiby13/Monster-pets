@@ -372,10 +372,10 @@ p{
 .ingredients_block{
 	display: flex;
 	position: relative;
-     height: 380px;
-     margin: 100px 120px;
-     align-items: center;
-     background-color: rgba(29,58,42,.1);
+    height: 380px;
+    margin: 100px 120px;
+    align-items: center;
+    background-color: rgba(29,58,42,.1);
 }
 .ingredients_block-1{
 	margin-left:70px;
@@ -404,12 +404,12 @@ p{
 .icon{
 	display: inline-block;
 	width: 100px;
-     height: 65px;
-     max-height: 100px;
-     max-width: 100px;
-     min-width: 100px;
-     justify-content: center;
-     align-items: center;
+    height: 65px;
+    max-height: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    justify-content: center;
+    align-items: center;
 }
 .item-ingredients{
 	margin: 0;
@@ -485,11 +485,11 @@ p{
 }
 .heading{
 	color: #1d3a2a;
-     font-size: 2rem;
-     line-height: 1.9rem;
-     font-weight: 700;
-     margin-top: 0;
-     margin-bottom: 35px;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 35px;
 }
 .dog-products_collection{
 	width: 100%;
@@ -503,8 +503,8 @@ p{
 .collection-item{
 	box-shadow: 0 1px 3px 0 rgb(29 58 42 / 24%);
 	overflow: hidden;
-     border-radius: 4px;
-     color: #1d3a2a;
+    border-radius: 4px;
+    color: #1d3a2a;
 }
 .collection-item:hover{
 	transform: scale(1.1);
@@ -516,35 +516,113 @@ p{
 }
 .product-card-image{
 	overflow: hidden;
-     max-height: 360px;
-     background-color: #f6f5f2;
-     object-fit: fill
+    max-height: 360px;
+    background-color: #f6f5f2;
+    object-fit: fill
 }
 .product-card-text{
 	position: relative;
-     min-height: 150px;
-     padding: 20px;
+    min-height: 150px;
+    padding: 20px;
 }
 .product-card-name{
 	font-size: 18px;
-     font-weight: 700;
-     text-decoration: none;
+    font-weight: 700;
+    text-decoration: none;
 }
 .product-card-cta{
 	display: flex;
 	position: absolute;
-     bottom: 1rem;
-     align-items: center;
-     color: #1d3a2a;
+    bottom: 1rem;
+    align-items: center;
+    color: #1d3a2a;
 }
 .text-block{
 	margin-right: 10px;
-     font-weight: 700;
+    font-weight: 700;
+}
+.product-arrow{
+	margin-left: 200px;
+}
+/*ADAPTIVE-DOG/CAT-PRODUCTS--------------------------------------------*/
+@media(max-width: 991px){
+	.dog-products_collection {
+		display: block; 
+	}
+	.collection-item{
+		display: inline-block;	
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.heading {
+		text-align: center; 
+	}
+}
+@media(max-width: 479px){
+	.collection-items{
+		display: flex;
+	}
+	.products_block{
+		margin: 0 auto; 
+		padding: 0 40px;
+		padding-left: 45;
+	}
+	.heading {
+		text-align: left; 
+	}
+	.product-arrow{
+		margin-left: 150px;
+	}
+}	
+@media(max-width: 360px){
+	.product-image{
+		width: 265.33px;
+		height: 265.33px;
+	}	
+	.product-card-name{
+		font-size: 16px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.products_block{
+		padding: 0 35px;
+	}
+	.heading {
+		font-size: 36px; 
+	}
+	.collection-item{
+		width: 256.33px;
+	}
+	.product-arrow{
+		margin-left: 80px;
+	}
+	.heading{
+		font-size: 32px; 
+	}
+	.product-card-name{
+		line-height: normal;
+	}
+	
 }
 /*-----------------------------------------------------------------*/
 .cat-products{
 	margin-bottom: 50px;
 }
+/*ADAPTIVE-CAT-PRODUCTS--------------------------------------------*/
+@media(max-width: 991px){
+	
+}
+@media(max-width: 767px){
+	
+}	
+@media(max-width: 479px){
+	
+}
+@media(max-width: 360px){
+	
+	
+}
+/*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 .footer{
 	display: flex;
@@ -617,4 +695,18 @@ h3{
 	font-size: 16px;
      font-weight: 400;
      line-height: 24px;
+}
+/*ADAPTIVE-FOOTER--------------------------------------------*/
+@media(max-width: 991px){
+	
+}
+@media(max-width: 767px){
+	
+}	
+@media(max-width: 479px){
+	
+}
+@media(max-width: 360px){
+	
+	
 }
