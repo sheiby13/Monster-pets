@@ -106,7 +106,7 @@ input[type="checkbox"]{
 	float:right;
 }
 .navigation{
-	position:fixed;
+	position: relative;
     left: 0;
     top: 0;
     right: 0;
